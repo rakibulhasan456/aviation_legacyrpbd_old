@@ -1,0 +1,35 @@
+span {
+  padding-left: 10px;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    /*font-size: 20px;*/
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-brand-name {
+    padding-left: 20px;
+    transition: all 0.3s ease;
+  }
+}
+
+.nav-item a:hover {
+  color: black!important;
+  transition: all 0.5s ease;
+  background-color: white;
+}
+
+.nav-item a {
+  border-radius: 20px;
+}
+
+@media (max-width: 359px) {
+  .navbar-brand-name {
+    display: none;
+  }
+}
+

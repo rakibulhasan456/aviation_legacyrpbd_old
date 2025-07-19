@@ -1,0 +1,14 @@
+@media (max-width: 400px) {
+  .discord-text-link {
+    display: none;
+  }
+}
+
+.discord-text-link:hover {
+  color: #13ff13!important;
+}
+
+.discord-icon:hover {
+  color: #ff0000!important;
+}
+

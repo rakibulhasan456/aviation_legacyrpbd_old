@@ -1,0 +1,143 @@
+.bs-icon {
+  --bs-icon-size: .75rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--bs-icon-size);
+  width: calc(var(--bs-icon-size) * 2);
+  height: calc(var(--bs-icon-size) * 2);
+  color: var(--bs-primary);
+}
+
+.bs-icon-xs {
+  --bs-icon-size: 1rem;
+  width: calc(var(--bs-icon-size) * 1.5);
+  height: calc(var(--bs-icon-size) * 1.5);
+}
+
+.bs-icon-sm {
+  --bs-icon-size: 1rem;
+}
+
+.bs-icon-md {
+  --bs-icon-size: 1.5rem;
+}
+
+.bs-icon-lg {
+  --bs-icon-size: 2rem;
+}
+
+.bs-icon-xl {
+  --bs-icon-size: 2.5rem;
+}
+
+.bs-icon.bs-icon-primary {
+  color: var(--bs-white);
+  background: var(--bs-primary);
+}
+
+.bs-icon.bs-icon-primary-light {
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), .2);
+}
+
+.bs-icon.bs-icon-semi-white {
+  color: var(--bs-primary);
+  background: rgba(255, 255, 255, .5);
+}
+
+.bs-icon.bs-icon-rounded {
+  border-radius: .5rem;
+}
+
+.bs-icon.bs-icon-circle {
+  border-radius: 50%;
+}
+
+.navbar-nav {
+  gap: 10px;
+}
+
+#background {
+  height: 100vh;
+  background: url("../../assets/img/aviation_parallax_3.png") center / cover;
+}
+
+#content {
+  height: 100vh;
+  background: url("../../assets/img/logo_image_background.png") center / cover;
+}
+
+#mask {
+  mask: url("../../assets/img/mask_logo_2.svg") no-repeat center;
+  mask-size: 10000%;
+}
+
+#overlay {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+#logo-color {
+  margin-bottom: 40px;
+  margin-top: calc(50vh - 139.5px);
+}
+
+#intro h1 {
+  font-size: 60px;
+  line-height: 0.9;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background-image: radial-gradient(circle at 50% -30vh, #ffd687 0, #fb766a 50vh, #9d2f6a 90vh, rgba(32, 31, 66, 0) 150vh);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+  #intro h1 {
+    font-size: 120px;
+  }
+}
+
+#intro p {
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  #intro p {
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+}
+
+#management-heading {
+  font-size: 48px;
+}
+
+@media (max-width: 424px) {
+  #management-heading {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  #management-paragraph {
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+}
+
+#img-ahmed-imran-khan {
+  /*margin-inline: 150px;*/
+}
+
+#img-ryuujin-onizuka {
+  margin-inline-start: 900px;
+}
+
