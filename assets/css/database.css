@@ -1,0 +1,25 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sheet-section {
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(to bottom right, #1a1a1a, #2c2c2c);
+}
+
+.table th, .table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .table th, .table td {
+    font-size: 12px;
+    padding: 0.4rem;
+  }
+}
+

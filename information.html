@@ -22,27 +22,91 @@
         <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/lsa_logo.webp" width="50" height="50" /><span class="navbar-brand-name">Los Santos Aviation</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-5">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="management.html">Management</a></li>
                     <li class="nav-item"><a class="nav-link" href="regulations.html">Regulations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="information.html">Information</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="information.html">Information</a></li>
                     <li class="nav-item"><a class="nav-link" href="database.html">Database</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Join Aviation</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section id="aviation" style="height: 400vh;">
-        <div class="sticky-top overflow-hidden" data-anime-opacity="1, 1, 0" data-anime-mask-size="10000%, 400px, 400px" data-anime-start="30vh" data-anime-end="180vh" id="mask" data-anime-scroll-animation="">
-            <div data-anime-scale="1.2, 1" data-anime-start="0" data-anime-end="150vh" id="background" data-anime-scroll-animation="">
-                <div data-anime-opacity="0, 0, 1" data-anime-start="0" data-anime-end="100vh" id="overlay" data-anime-scroll-animation=""></div>
-                <div data-anime-opacity="1, 0, 0" data-anime-start="0" data-anime-end="100vh" id="content" data-anime-scroll-animation=""></div>
-            </div>
+    <section class="overflow-hidden" id="management">
+        <h1 class="fw-bold text-center pt-4" id="aviation-heading">AVIATION INFORMATION</h1>
+        <p class="text-center ps-4 pe-4 pt-2 mb-6 pb-0" id="aviation-paragraph">Here, you will find all information about licenses, fee, ranks, and ATC calls.</p>
+        <div class="table-responsive" id="license-table">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="text-center">License</th>
+                        <th class="text-center">License Description</th>
+                    </tr>
+                </thead>
+                <tbody style="vertical-align: middle;">
+                    <tr>
+                        <td class="fs-5 fw-bold text-center">HELI</td>
+                        <td>A Private helicopter License authorizes you to operate helicopters without the supervision of an instructor under the terms of your license, LSA regulations. Upon receiving your Type-Heli license you will be rated to fly helicopters classified as “Light weight”.</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-5 fw-bold text-center">FIXED WING</td>
+                        <td>A Private Pilot’s License authorizes you to operate aircraft without the supervision of an instructor under the terms of your license, LSA regulations. Upon receiving your Type-FW license you will be rated to fly fixed wing aircraft classified as “Light weight”.</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-5 fw-bold text-center">HEAVYWEIGHT</td>
+                        <td>If you complete the Heavyweight course and pass the exam, you will be eligible for the Heavyweight license.</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-5 fw-bold text-center">COMMERCIAL</td>
+                        <td>If you complete CPL (Commercial Pilot) course, eligible for commercial license.</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-5 fw-bold text-center">CFI</td>
+                        <td>This license allows you to provide Instruction/ Training sessions &amp; LSA Pilot recruitment exams. Upon receiving your CFI license your call-sign will be appended with “C” allowing other pilots to recognize your current rating. Performance license will be included in this.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="sticky-top text-center" data-anime-opacity="0, 1, 1, 1" data-anime-scale="1, 1, 0.9" data-anime-translate-y="0, 0, -50, -100" data-anime-start="115vh" data-anime-end="350vh" id="intro" data-anime-scroll-animation=""><img class="img-fluid" id="logo-color" src="assets/img/aviation_logo_text_2.png" width="290" height="200">
-            <h1>About LSA</h1>
-            <p class="ps-4 pe-4 pt-4 pb-0"><br><span style="color: rgb(255, 255, 255); background-color: transparent;">Los Santos Aviation (LSA), a part of the San Andreas Aviation Administration (SAAA), plays a vital role in civil aviation across the state. LSA offers pilot licensing through structured exams and professional training conducted by Certified Flight Instructors (CFI).</span><br><br><span style="color: rgb(255, 255, 255); background-color: transparent;">​Citizens are warmly welcomed to become a part of the aviation community, learning to navigate the skies while upholding the highest standards of safety and expertise.</span><br><br><span style="color: rgb(255, 255, 255); background-color: transparent;">LSA is dedicated to inspiring a passion for aviation and cultivating a skilled network of pilots for a thriving aviation future.</span></p>
+        <h1 class="fw-bold text-center pt-6 pb-3" id="punishment-suspension-1">Designation</h1>
+        <div class="table-responsive" id="designation-table">
+            <table class="table table-striped-columns table-bordered">
+                <tbody style="vertical-align: middle;">
+                    <tr>
+                        <td class="fs-5 fw-bold text-center">Designation</td>
+                        <td>1. Chairman<br><br>2. Director<br><br>3. Flight Instructor<br><br>4. Captain<br><br>5. First Officer (FO)<br><br>6. Commercial Pilot (CPL)<br><br>7. Private Pilot (PPL)<br><br>8. Student Pilot (SP)</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        <h1 class="fw-bold text-center pt-6 pb-0" id="punishment-suspension-2">ATC Calls</h1>
+        <div class="table-responsive" id="atc-calls-table">
+            <table class="table table-striped">
+                <tbody style="vertical-align: middle;">
+                    <tr>
+                        <td class="text-center text-warning">Take off calls Pilot to ATC tower</td>
+                        <td>&nbsp;&lt;call sign&gt; Taxiing via &lt;aircraft model&gt;, heading to &lt;waypoint&gt;<br><br>&nbsp;&lt;call sign&gt; destination &lt;airport/helipad name&gt; requesting for takeoff</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center text-success-emphasis">Takeoff Clearance</td>
+                        <td>&lt;call sign&gt; Ready for takeoff, holding short of [Runway Number] / &lt;waypoint&gt;<br><br>Full power &amp; gain minimum takeoff airspeed<br><br>&lt;call sign&gt; "V1, rotate" / airborne, climbing through [altitude]<br><br>&lt;call sign&gt; Gear up<br><br>&lt;call sign&gt; Departure from &lt;airport&gt;, maintain [altitude], [climbing / descending]</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center text-warning">Landing Calls Pilot to ATC tower</td>
+                        <td>&lt;call sign&gt; with &lt;airport model&gt; approaching to &lt;airport&gt;<br><br>&lt;call sign&gt;&nbsp;heading to &lt;direction&gt; at &lt;altitude&gt;<br><br>&lt;call sign&gt; Departure from &lt;airport&gt;, maintain [altitude], [climbing / descending]</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center text-success-emphasis">Landing Clearance</td>
+                        <td>&lt;call sign&gt; Ready for landing, holding short of [Runway Number]</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center text-warning">Lower the thrust power &amp; Maintain landing Airspeed</td>
+                        <td>&lt;call sign&gt; landed at &lt;waypoint&gt; &amp; taxiing to &lt;hanger /waypoint&gt;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1 class="fw-bold text-center pt-6 pb-0" id="punishment-suspension-3">License Fee</h1>
+        <p class="text-center ps-4 pe-4 pt-4 mb-6 pb-0" id="management-paragraph-1">PPL License Fee: $10,000 Per Month<br>CPL License Fee: $15,000 Per Month</p>
     </section>
     <footer class="text-center bg-dark">
         <div class="container text-white py-4 py-lg-5">
