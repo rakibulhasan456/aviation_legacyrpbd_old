@@ -1,65 +1,117 @@
 <!DOCTYPE html>
-<html data-bs-theme="dark" lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>aviation_legacyrpbd_update</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/bss-overrides.css">
-    <link rel="stylesheet" href="assets/css/buttons.css">
-    <link rel="stylesheet" href="assets/css/database.css">
-    <link rel="stylesheet" href="assets/css/iframe.css">
-    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
-    <link rel="stylesheet" href="assets/css/Single-Advisor-Profile.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+    <meta name="viewport" content="width=1280">
+
+    <title>Los Santos Aviation</title>
+    <!-- Import Montserrat font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/basicscroll"></script>
+
 </head>
 
-<body style="font-family: Montserrat, sans-serif;">
-    <nav class="navbar navbar-expand-lg bg-dark-subtle py-3" data-bs-theme="dark">
-        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/lsa_logo.webp" width="50" height="50" /><span class="navbar-brand-name">Los Santos Aviation</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-5">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="management.html">Management</a></li>
-                    <li class="nav-item"><a class="nav-link" href="regulations.html">Regulations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="information.html">Information</a></li>
-                    <li class="nav-item"><a class="nav-link" href="database.html">Database</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Join Aviation</a></li>
-                </ul>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="image/lsa_logo.webp" alt="Los Santos Aviation Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="management.html">Management</a>
+            <a href="regulations.html">Regulations</a>
+            <a href="information.html">Information</a>
+            <a href="database.html">Database</a>
+            <a href="join_aviation.html">Join Aviation</a>
+        </nav>
+    </header>
+    <main>
+
+        <section class="parallax-container">
+
+            <div class="parallax-text" data-modifier="12">LOS SANTOS AVIATION</div>
+            <img class="scene" data-modifier="6" src="image/aviation_parallax_3.png">
+            <img class="scene" data-modifier="0" src="image/aviation_parallax_1.png">
+        </section>
+
+        <h6></h6>
+        <h4></h4>
+
+        <section data-animate>
+
+            <h2>ABOUT LSA</h2>
+
+            <p>
+                Los Santos Aviation (LSA), a part of the San Andreas Aviation Administration (SAAA),<br>plays a vital role
+                in civil aviation across the state.
+            </p>
+                
+            <p>LSA offers pilot licensing through structured exams and professional
+                training conducted by Certified Flight Instructors (CFI).
+            </p>
+
+            <p>
+                Citizens are warmly welcomed to become a part of the aviation community,<br>learning to navigate the skies
+                while upholding the highest standards of safety and expertise.
+            </p>
+
+            <p>
+                LSA is dedicated to inspiring a passion for aviation and cultivating a skilled network of pilots for a
+                thriving aviation future.
+            </p>
+
+        </section>
+
+        <h5></h5>
+        <h6></h6>
+
+    </main>
+
+    <script src="js/scripts.js"></script>
+
+    <!--<footer>
+        <p>© Copyright by Legacy Roleplay Bangladesh & Designed by Ryuujin Onizuka</p>
+    </footer>-->
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="https://discord.gg/eQyzRbk6PP" target="_blank" class="footer-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
+                        <path fill="currentColor"
+                            d="M104.4 104.2c-5.7 0-10.2 5-10.2 11.1 0 6.1 4.6 11.1 10.2 11.1s10.3-5 10.2-11.1c-.1-6.1-4.5-11.1-10.2-11.1Zm36.1 0c-5.7 0-10.2 5-10.2 11.1 0 6.1 4.6 11.1 10.2 11.1s10.3-5 10.2-11.1c-.1-6.1-4.5-11.1-10.2-11.1Z" />
+                        <path fill="currentColor"
+                            d="M189.5 20H55.5C36.5 20 21 35.2 21 54.4v131.1c0 19.2 15.5 34.5 34.5 34.5h99.3l-4.7-16.4 11.3 10.5 10.7 9.8 19 16.7V54.4c0-19.2-15.5-34.4-34.6-34.4Zm-42.4 135s-4-4.8-7.3-9c14.6-4.1 20.1-13.1 20.1-13.1-4.6 3-9 5.1-12.9 6.5-5.6 2.3-11 3.8-16.2 4.7-10.7 2-20.4 1.5-28.8-.1-6.3-1.2-11.8-2.9-16.3-4.7-2.6-1-5.4-2.3-8.2-4-0.3-0.2-0.6-0.3-0.9-0.5-0.2-0.1-0.3-0.2-0.4-0.3-1.8-1-2.8-1.7-2.8-1.7s5.3 8.8 19.3 13c-3.3 4.2-7.4 9.1-7.4 9.1-24.4-0.8-33.6-16.8-33.6-16.8 0-35.6 15.9-64.4 15.9-64.4 15.9-11.8 31-11.4 31-11.4l1.1 1.3c-19.9 5.7-29 14.3-29 14.3s2.4-1.3 6.5-3c11.8-5.2 21.1-6.6 25-6.9 0.6-0.1 1.2-0.2 1.8-0.2 6.5-0.9 13.8-1.1 21.4-0.2 10.1 1.2 20.9 4.3 32 10.6 0 0-8.7-8.3-27.5-14l1.5-1.7s15.1-0.3 31 11.4c0 0 15.9 28.8 15.9 64.4 0 0-9.5 16-33.8 16.8Z" />
+                    </svg>
+                    <span>Legacy BD HUB</span>
+                </a>
             </div>
-        </div>
-    </nav>
-    <section id="aviation" style="height: 400vh;">
-        <div class="sticky-top overflow-hidden" data-anime-opacity="1, 1, 0" data-anime-mask-size="10000%, 400px, 400px" data-anime-start="30vh" data-anime-end="180vh" id="mask" data-anime-scroll-animation="">
-            <div data-anime-scale="1.2, 1" data-anime-start="0" data-anime-end="150vh" id="background" data-anime-scroll-animation="">
-                <div data-anime-opacity="0, 0, 1" data-anime-start="0" data-anime-end="100vh" id="overlay" data-anime-scroll-animation=""></div>
-                <div data-anime-opacity="1, 0, 0" data-anime-start="0" data-anime-end="100vh" id="content" data-anime-scroll-animation=""></div>
+
+            <p>© Copyright by Legacy Roleplay Bangladesh & Designed by Ryuujin Onizuka</p>
+
+            <div class="footer-right">
+                <a href="https://discord.gg/8qzgmPmpBs" target="_blank" class="footer-link">
+                    <span>Legacy Roleplay Bangladesh</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
+                        <path fill="currentColor"
+                            d="M104.4 104.2c-5.7 0-10.2 5-10.2 11.1 0 6.1 4.6 11.1 10.2 11.1s10.3-5 10.2-11.1c-.1-6.1-4.5-11.1-10.2-11.1Zm36.1 0c-5.7 0-10.2 5-10.2 11.1 0 6.1 4.6 11.1 10.2 11.1s10.3-5 10.2-11.1c-.1-6.1-4.5-11.1-10.2-11.1Z" />
+                        <path fill="currentColor"
+                            d="M189.5 20H55.5C36.5 20 21 35.2 21 54.4v131.1c0 19.2 15.5 34.5 34.5 34.5h99.3l-4.7-16.4 11.3 10.5 10.7 9.8 19 16.7V54.4c0-19.2-15.5-34.4-34.6-34.4Zm-42.4 135s-4-4.8-7.3-9c14.6-4.1 20.1-13.1 20.1-13.1-4.6 3-9 5.1-12.9 6.5-5.6 2.3-11 3.8-16.2 4.7-10.7 2-20.4 1.5-28.8-.1-6.3-1.2-11.8-2.9-16.3-4.7-2.6-1-5.4-2.3-8.2-4-0.3-0.2-0.6-0.3-0.9-0.5-0.2-0.1-0.3-0.2-0.4-0.3-1.8-1-2.8-1.7-2.8-1.7s5.3 8.8 19.3 13c-3.3 4.2-7.4 9.1-7.4 9.1-24.4-0.8-33.6-16.8-33.6-16.8 0-35.6 15.9-64.4 15.9-64.4 15.9-11.8 31-11.4 31-11.4l1.1 1.3c-19.9 5.7-29 14.3-29 14.3s2.4-1.3 6.5-3c11.8-5.2 21.1-6.6 25-6.9 0.6-0.1 1.2-0.2 1.8-0.2 6.5-0.9 13.8-1.1 21.4-0.2 10.1 1.2 20.9 4.3 32 10.6 0 0-8.7-8.3-27.5-14l1.5-1.7s15.1-0.3 31 11.4c0 0 15.9 28.8 15.9 64.4 0 0-9.5 16-33.8 16.8Z" />
+                    </svg>
+                </a>
             </div>
-        </div>
-        <div class="sticky-top text-center" data-anime-opacity="0, 1, 1, 1" data-anime-scale="1, 1, 0.9" data-anime-translate-y="0, 0, -50, -100" data-anime-start="115vh" data-anime-end="350vh" id="intro" data-anime-scroll-animation=""><img class="img-fluid" id="logo-color" src="assets/img/aviation_logo_text_2.png" width="290" height="200">
-            <h1>About LSA</h1>
-            <p class="ps-4 pe-4 pt-4 pb-0"><br><span style="color: rgb(255, 255, 255); background-color: transparent;">Los Santos Aviation (LSA), a part of the San Andreas Aviation Administration (SAAA), plays a vital role in civil aviation across the state. LSA offers pilot licensing through structured exams and professional training conducted by Certified Flight Instructors (CFI).</span><br><br><span style="color: rgb(255, 255, 255); background-color: transparent;">​Citizens are warmly welcomed to become a part of the aviation community, learning to navigate the skies while upholding the highest standards of safety and expertise.</span><br><br><span style="color: rgb(255, 255, 255); background-color: transparent;">LSA is dedicated to inspiring a passion for aviation and cultivating a skilled network of pilots for a thriving aviation future.</span></p>
-        </div>
-    </section>
-    <footer class="text-center bg-dark">
-        <div class="container text-white py-4 py-lg-5">
-            <ul class="list-inline">
-                <li class="list-inline-item me-4"><a class="fw-semibold text-decoration-none discord-text-link" href="https://discord.com/invite/eQyzRbk6PP" style="padding-right: 10px;font-size: 12px;color: white;" target="_blank">Legacy BD HUB</a><a class="link-light ps-0 pe-0" href="https://discord.com/invite/eQyzRbk6PP" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-discord text-light discord-icon">
-                            <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"></path>
-                        </svg></a></li>
-                <li class="list-inline-item"><a href="https://discord.com/invite/8qzgmPmpBs" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-discord text-light discord-icon">
-                            <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"></path>
-                        </svg></a><a class="fw-semibold text-decoration-none discord-text-link" href="https://discord.com/invite/8qzgmPmpBs" style="padding-left: 10px;font-size: 12px;color: white;" target="_blank">Legacy Roleplay Bangladesh</a></li>
-            </ul>
-            <p class="text-muted mb-0" style="font-size: 12px;">© Copyright by Legacy Roleplay Bangladesh &amp; Designed by Ryuujin Onizuka</p>
         </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/database.js"></script>
-    <script src="assets/js/Scroll-Animation-script.js"></script>
+
+
 </body>
 
 </html>

@@ -1,198 +1,262 @@
 <!DOCTYPE html>
-<html data-bs-theme="dark" lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>aviation_legacyrpbd_update</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/bss-overrides.css">
-    <link rel="stylesheet" href="assets/css/buttons.css">
-    <link rel="stylesheet" href="assets/css/database.css">
-    <link rel="stylesheet" href="assets/css/iframe.css">
-    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
-    <link rel="stylesheet" href="assets/css/Single-Advisor-Profile.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    
+    <meta name="viewport" content="width=1280">
+
+    <title>Los Santos Aviation</title>
+    <!-- Import Montserrat font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/basicscroll"></script>
+
 </head>
 
-<body style="font-family: Montserrat, sans-serif;">
-    <nav class="navbar navbar-expand-lg bg-dark-subtle py-3" data-bs-theme="dark">
-        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/lsa_logo.webp" width="50" height="50" /><span class="navbar-brand-name">Los Santos Aviation</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-5">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="management.html">Management</a></li>
-                    <li class="nav-item"><a class="nav-link" href="regulations.html">Regulations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="information.html">Information</a></li>
-                    <li class="nav-item"><a class="nav-link" href="database.html">Database</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Join Aviation</a></li>
-                </ul>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="image/lsa_logo.webp" alt="Los Santos Aviation Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Management</a>
+            <a href="regulations.html">Regulations</a>
+            <a href="information.html">Information</a>
+            <a href="database.html">Database</a>
+            <a href="join_aviation.html">Join Aviation</a>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="management-section">
+            <h2>AVIATION MANAGEMENT</h2>
+            <p>Here, you will find all the aviation management members along with their contact information.<br>For any queries or to rejoin as a pilot, feel free to reach out to a Flight Instructor.</p>
+
+            <div class="management-team">
+                <div class="management-card" data-animate>
+                    <div class="management-line"></div>
+                    <div class="management-image">
+                        <img src="image/ahmed_imran_khan.png" alt="Ahmed Imran Khan">
+                    </div>
+                    <div class="management-info">
+                        <h3>Ahmed Imran Khan</h3>
+                        <h4>Chairman</h4>
+                        <p>Email: ahmed.imran@san-andreas.gov</p>
+                        <div class="social-links">
+                            <a href="https://discordapp.com/users/443244400831627284" target="_blank"
+                                aria-label="Discord">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 245 240"
+                                    fill="#5865F2">
+                                    <path
+                                        d="M104.4 104.8c-5.7 0-10.2 5-10.2 11.2 0 6.1 4.6 11.2 10.2 11.2 5.7 0 10.3-5 10.2-11.2 0-6.1-4.5-11.2-10.2-11.2zm36.2 0c-5.7 0-10.2 5-10.2 11.2 0 6.1 4.6 11.2 10.2 11.2 5.7 0 10.3-5 10.2-11.2 0-6.1-4.5-11.2-10.2-11.2z" />
+                                    <path
+                                        d="M189.5 20h-134C32.2 20 20 32.3 20 48.5v134c0 16.2 12.3 28.5 28.5 28.5h114.3l-5.3-18.4 12.7 11.7 12 11.1 21.3 18.6V48.5c0-16.2-12.2-28.5-28.5-28.5zM163 162s-5.3-6.3-9.7-11.8c19.2-5.4 26.4-17.3 26.4-17.3-6 4-11.7 6.8-16.8 8.6-7.3 3.1-14.4 5.1-21.2 6.3-14 2.6-26.8 1.9-37.8-0.1-8.3-1.6-15.4-3.9-21.3-6.3-3.3-1.2-7-3-10.7-5.2-0.4-0.3-0.8-0.5-1.2-0.8-0.3-0.2-0.5-0.3-0.6-0.5-2.7-1.5-4.2-2.5-4.2-2.5s7 11.7 25.5 17.2c-4.4 5.5-9.8 12-9.8 12-32.3-1-44.6-22.2-44.6-22.2 0-47.1 21-85.3 21-85.3C71.4 41 87.7 39 87.7 39l1 1.2C66 45.7 59.5 53.4 59.5 53.4s2.5-1.3 6.8-3.2c12.3-5.4 22.1-6.9 26.1-7.2 0.7-0.1 1.3-0.2 2-0.2 7.1-0.9 15.1-1.1 23.4-0.2 11 1.2 22.8 4.1 34.9 10.1 0 0-5.9-8.4-18.5-14.1l1.4-1.6s16.3-2 33.2 8.1c0 0 21 38.2 21 85.3 0 0-12.4 21.2-44.7 22.2z" />
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="management-card" data-animate>
+                    <div class="management-line"></div>
+                    <div class="management-image">
+                        <img src="image/ryuujin_onizuka.png" alt="Ryuujin Onizuka">
+                    </div>
+                    <div class="management-info">
+                        <h3>Ryuujin Onizuka</h3>
+                        <h4>Director</h4>
+                        <p>Email: ryuujin.onizuka@san-andreas.gov</p>
+                        <div class="social-links">
+                            <a href="https://discordapp.com/users/413256770119663616" target="_blank"
+                                aria-label="Discord">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 245 240"
+                                    fill="#5865F2">
+                                    <path
+                                        d="M104.4 104.8c-5.7 0-10.2 5-10.2 11.2 0 6.1 4.6 11.2 10.2 11.2 5.7 0 10.3-5 10.2-11.2 0-6.1-4.5-11.2-10.2-11.2zm36.2 0c-5.7 0-10.2 5-10.2 11.2 0 6.1 4.6 11.2 10.2 11.2 5.7 0 10.3-5 10.2-11.2 0-6.1-4.5-11.2-10.2-11.2z" />
+                                    <path
+                                        d="M189.5 20h-134C32.2 20 20 32.3 20 48.5v134c0 16.2 12.3 28.5 28.5 28.5h114.3l-5.3-18.4 12.7 11.7 12 11.1 21.3 18.6V48.5c0-16.2-12.2-28.5-28.5-28.5zM163 162s-5.3-6.3-9.7-11.8c19.2-5.4 26.4-17.3 26.4-17.3-6 4-11.7 6.8-16.8 8.6-7.3 3.1-14.4 5.1-21.2 6.3-14 2.6-26.8 1.9-37.8-0.1-8.3-1.6-15.4-3.9-21.3-6.3-3.3-1.2-7-3-10.7-5.2-0.4-0.3-0.8-0.5-1.2-0.8-0.3-0.2-0.5-0.3-0.6-0.5-2.7-1.5-4.2-2.5-4.2-2.5s7 11.7 25.5 17.2c-4.4 5.5-9.8 12-9.8 12-32.3-1-44.6-22.2-44.6-22.2 0-47.1 21-85.3 21-85.3C71.4 41 87.7 39 87.7 39l1 1.2C66 45.7 59.5 53.4 59.5 53.4s2.5-1.3 6.8-3.2c12.3-5.4 22.1-6.9 26.1-7.2 0.7-0.1 1.3-0.2 2-0.2 7.1-0.9 15.1-1.1 23.4-0.2 11 1.2 22.8 4.1 34.9 10.1 0 0-5.9-8.4-18.5-14.1l1.4-1.6s16.3-2 33.2 8.1c0 0 21 38.2 21 85.3 0 0-12.4 21.2-44.7 22.2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="management-section">
+            <div class="management-team">
+                <div class="management-card" data-animate>
+                    <div class="management-line"></div>
+                    <div class="management-image">
+                        <img src="image/kai_savage.png" alt="Kai Savage">
+                    </div>
+                    <div class="management-info">
+                        <h3>Kai Savage</h3>
+                        <h4>Flight Instructor</h4>
+                        <p>Email: kai.savage@san-andreas.gov</p>
+                        <p>Contact: 111-2222</p>
+                        <div class="social-links">
+                            <a href="https://discordapp.com/users/401034118718160926" target="_blank"
+                                aria-label="Discord">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 245 240"
+                                    fill="#5865F2">
+                                    <path
+                                        d="M104.4 104.8c-5.7 0-10.2 5-10.2 11.2 0 6.1 4.6 11.2 10.2 11.2 5.7 0 10.3-5 10.2-11.2 0-6.1-4.5-11.2-10.2-11.2zm36.2 0c-5.7 0-10.2 5-10.2 11.2 0 6.1 4.6 11.2 10.2 11.2 5.7 0 10.3-5 10.2-11.2 0-6.1-4.5-11.2-10.2-11.2z" />
+                                    <path
+                                        d="M189.5 20h-134C32.2 20 20 32.3 20 48.5v134c0 16.2 12.3 28.5 28.5 28.5h114.3l-5.3-18.4 12.7 11.7 12 11.1 21.3 18.6V48.5c0-16.2-12.2-28.5-28.5-28.5zM163 162s-5.3-6.3-9.7-11.8c19.2-5.4 26.4-17.3 26.4-17.3-6 4-11.7 6.8-16.8 8.6-7.3 3.1-14.4 5.1-21.2 6.3-14 2.6-26.8 1.9-37.8-0.1-8.3-1.6-15.4-3.9-21.3-6.3-3.3-1.2-7-3-10.7-5.2-0.4-0.3-0.8-0.5-1.2-0.8-0.3-0.2-0.5-0.3-0.6-0.5-2.7-1.5-4.2-2.5-4.2-2.5s7 11.7 25.5 17.2c-4.4 5.5-9.8 12-9.8 12-32.3-1-44.6-22.2-44.6-22.2 0-47.1 21-85.3 21-85.3C71.4 41 87.7 39 87.7 39l1 1.2C66 45.7 59.5 53.4 59.5 53.4s2.5-1.3 6.8-3.2c12.3-5.4 22.1-6.9 26.1-7.2 0.7-0.1 1.3-0.2 2-0.2 7.1-0.9 15.1-1.1 23.4-0.2 11 1.2 22.8 4.1 34.9 10.1 0 0-5.9-8.4-18.5-14.1l1.4-1.6s16.3-2 33.2 8.1c0 0 21 38.2 21 85.3 0 0-12.4 21.2-44.7 22.2z" />
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="management-card" data-animate>
+                    <div class="management-line"></div>
+                    <div class="management-image">
+                        <img src="image/harden_cruz.png" alt="Harden Cruz">
+                    </div>
+                    <div class="management-info">
+                        <h3>Harden Cruz</h3>
+                        <h4>Flight Instructor</h4>
+                        <p>Email: harden.cruz@san-andreas.gov</p>
+                        <p>Contact: 108-1031</p>
+                        <div class="social-links">
+                            <a href="https://discordapp.com/users/1112285988971090010" target="_blank"
+                                aria-label="Discord">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 245 240"
+                                    fill="#5865F2">
+                                    <path
+                                        d="M104.4 104.8c-5.7 0-10.2 5-10.2 11.2 0 6.1 4.6 11.2 10.2 11.2 5.7 0 10.3-5 10.2-11.2 0-6.1-4.5-11.2-10.2-11.2zm36.2 0c-5.7 0-10.2 5-10.2 11.2 0 6.1 4.6 11.2 10.2 11.2 5.7 0 10.3-5 10.2-11.2 0-6.1-4.5-11.2-10.2-11.2z" />
+                                    <path
+                                        d="M189.5 20h-134C32.2 20 20 32.3 20 48.5v134c0 16.2 12.3 28.5 28.5 28.5h114.3l-5.3-18.4 12.7 11.7 12 11.1 21.3 18.6V48.5c0-16.2-12.2-28.5-28.5-28.5zM163 162s-5.3-6.3-9.7-11.8c19.2-5.4 26.4-17.3 26.4-17.3-6 4-11.7 6.8-16.8 8.6-7.3 3.1-14.4 5.1-21.2 6.3-14 2.6-26.8 1.9-37.8-0.1-8.3-1.6-15.4-3.9-21.3-6.3-3.3-1.2-7-3-10.7-5.2-0.4-0.3-0.8-0.5-1.2-0.8-0.3-0.2-0.5-0.3-0.6-0.5-2.7-1.5-4.2-2.5-4.2-2.5s7 11.7 25.5 17.2c-4.4 5.5-9.8 12-9.8 12-32.3-1-44.6-22.2-44.6-22.2 0-47.1 21-85.3 21-85.3C71.4 41 87.7 39 87.7 39l1 1.2C66 45.7 59.5 53.4 59.5 53.4s2.5-1.3 6.8-3.2c12.3-5.4 22.1-6.9 26.1-7.2 0.7-0.1 1.3-0.2 2-0.2 7.1-0.9 15.1-1.1 23.4-0.2 11 1.2 22.8 4.1 34.9 10.1 0 0-5.9-8.4-18.5-14.1l1.4-1.6s16.3-2 33.2 8.1c0 0 21 38.2 21 85.3 0 0-12.4 21.2-44.7 22.2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="management-card" data-animate>
+                    <div class="management-line"></div>
+                    <div class="management-image">
+                        <img src="image/cfi_unknown.png" alt="Ryuujin Onizuka">
+                    </div>
+                    <div class="management-info">
+                        <h3>?</h3>
+                        <h4>Flight Instructor</h4>
+                        <p>Email: ?</p>
+                        <p>Contact: ?</p>
+                        <div class="social-links">
+                            <a href="https://discordapp.com/users/413256770119663616" target="_blank"
+                                aria-label="Discord">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 245 240"
+                                    fill="#5865F2">
+                                    <path
+                                        d="M104.4 104.8c-5.7 0-10.2 5-10.2 11.2 0 6.1 4.6 11.2 10.2 11.2 5.7 0 10.3-5 10.2-11.2 0-6.1-4.5-11.2-10.2-11.2zm36.2 0c-5.7 0-10.2 5-10.2 11.2 0 6.1 4.6 11.2 10.2 11.2 5.7 0 10.3-5 10.2-11.2 0-6.1-4.5-11.2-10.2-11.2z" />
+                                    <path
+                                        d="M189.5 20h-134C32.2 20 20 32.3 20 48.5v134c0 16.2 12.3 28.5 28.5 28.5h114.3l-5.3-18.4 12.7 11.7 12 11.1 21.3 18.6V48.5c0-16.2-12.2-28.5-28.5-28.5zM163 162s-5.3-6.3-9.7-11.8c19.2-5.4 26.4-17.3 26.4-17.3-6 4-11.7 6.8-16.8 8.6-7.3 3.1-14.4 5.1-21.2 6.3-14 2.6-26.8 1.9-37.8-0.1-8.3-1.6-15.4-3.9-21.3-6.3-3.3-1.2-7-3-10.7-5.2-0.4-0.3-0.8-0.5-1.2-0.8-0.3-0.2-0.5-0.3-0.6-0.5-2.7-1.5-4.2-2.5-4.2-2.5s7 11.7 25.5 17.2c-4.4 5.5-9.8 12-9.8 12-32.3-1-44.6-22.2-44.6-22.2 0-47.1 21-85.3 21-85.3C71.4 41 87.7 39 87.7 39l1 1.2C66 45.7 59.5 53.4 59.5 53.4s2.5-1.3 6.8-3.2c12.3-5.4 22.1-6.9 26.1-7.2 0.7-0.1 1.3-0.2 2-0.2 7.1-0.9 15.1-1.1 23.4-0.2 11 1.2 22.8 4.1 34.9 10.1 0 0-5.9-8.4-18.5-14.1l1.4-1.6s16.3-2 33.2 8.1c0 0 21 38.2 21 85.3 0 0-12.4 21.2-44.7 22.2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h6></h6>
+
+        <section data-animate>
+
+            <h2>JOIN AS FLIGHT INSTRUCTOR</h2>
+
+            <p>
+                Are you interested in joining aviation management?
+            </p>
+
+            <p>
+                If you have the ability to instruct new pilots, the qualifications to fly both helicopters and planes
+                smoothly,<br>and the passion for it, then you might be a great candidate for the role.
+            </p>
+
+            <p>
+                Seats are limited, so grab the opportunity when it arises. Start preparing and keep an eye on the
+                aviation notices.
+            </p>
+
+        </section>
+
+        <h5></h5>
+
+        <div style="text-align: center; margin-top: 40px; margin-bottom: 100px;">
+            <!-- From Uiverse.io by Creatlydev -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEb_h9C8LqsOs64Ap8SriZeDQEU9lCTBYBexwwlw9zLNOdOA/viewform"
+                target="_blank" class="button" style="--clr: #7808d0">
+                <span class="button__icon-wrapper">
+                    <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg"
+                        width="10">
+                        <path
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy">
+                        <path
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                            fill="currentColor"></path>
+                    </svg>
+                </span>
+                Apply Now
+            </a>
+
+
+        </div>
+
+    </main>
+
+    <script src="js/scripts.js"></script>
+
+    <!--<footer>
+        <p>© Copyright by Legacy Roleplay Bangladesh & Designed by Ryuujin Onizuka</p>
+    </footer>-->
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="https://discord.gg/eQyzRbk6PP" target="_blank" class="footer-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
+                        <path fill="currentColor"
+                            d="M104.4 104.2c-5.7 0-10.2 5-10.2 11.1 0 6.1 4.6 11.1 10.2 11.1s10.3-5 10.2-11.1c-.1-6.1-4.5-11.1-10.2-11.1Zm36.1 0c-5.7 0-10.2 5-10.2 11.1 0 6.1 4.6 11.1 10.2 11.1s10.3-5 10.2-11.1c-.1-6.1-4.5-11.1-10.2-11.1Z" />
+                        <path fill="currentColor"
+                            d="M189.5 20H55.5C36.5 20 21 35.2 21 54.4v131.1c0 19.2 15.5 34.5 34.5 34.5h99.3l-4.7-16.4 11.3 10.5 10.7 9.8 19 16.7V54.4c0-19.2-15.5-34.4-34.6-34.4Zm-42.4 135s-4-4.8-7.3-9c14.6-4.1 20.1-13.1 20.1-13.1-4.6 3-9 5.1-12.9 6.5-5.6 2.3-11 3.8-16.2 4.7-10.7 2-20.4 1.5-28.8-.1-6.3-1.2-11.8-2.9-16.3-4.7-2.6-1-5.4-2.3-8.2-4-0.3-0.2-0.6-0.3-0.9-0.5-0.2-0.1-0.3-0.2-0.4-0.3-1.8-1-2.8-1.7-2.8-1.7s5.3 8.8 19.3 13c-3.3 4.2-7.4 9.1-7.4 9.1-24.4-0.8-33.6-16.8-33.6-16.8 0-35.6 15.9-64.4 15.9-64.4 15.9-11.8 31-11.4 31-11.4l1.1 1.3c-19.9 5.7-29 14.3-29 14.3s2.4-1.3 6.5-3c11.8-5.2 21.1-6.6 25-6.9 0.6-0.1 1.2-0.2 1.8-0.2 6.5-0.9 13.8-1.1 21.4-0.2 10.1 1.2 20.9 4.3 32 10.6 0 0-8.7-8.3-27.5-14l1.5-1.7s15.1-0.3 31 11.4c0 0 15.9 28.8 15.9 64.4 0 0-9.5 16-33.8 16.8Z" />
+                    </svg>
+                    <span>Legacy BD HUB</span>
+                </a>
+            </div>
+
+            <p>© Copyright by Legacy Roleplay Bangladesh & Designed by Ryuujin Onizuka</p>
+
+            <div class="footer-right">
+                <a href="https://discord.gg/8qzgmPmpBs" target="_blank" class="footer-link">
+                    <span>Legacy Roleplay Bangladesh</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
+                        <path fill="currentColor"
+                            d="M104.4 104.2c-5.7 0-10.2 5-10.2 11.1 0 6.1 4.6 11.1 10.2 11.1s10.3-5 10.2-11.1c-.1-6.1-4.5-11.1-10.2-11.1Zm36.1 0c-5.7 0-10.2 5-10.2 11.1 0 6.1 4.6 11.1 10.2 11.1s10.3-5 10.2-11.1c-.1-6.1-4.5-11.1-10.2-11.1Z" />
+                        <path fill="currentColor"
+                            d="M189.5 20H55.5C36.5 20 21 35.2 21 54.4v131.1c0 19.2 15.5 34.5 34.5 34.5h99.3l-4.7-16.4 11.3 10.5 10.7 9.8 19 16.7V54.4c0-19.2-15.5-34.4-34.6-34.4Zm-42.4 135s-4-4.8-7.3-9c14.6-4.1 20.1-13.1 20.1-13.1-4.6 3-9 5.1-12.9 6.5-5.6 2.3-11 3.8-16.2 4.7-10.7 2-20.4 1.5-28.8-.1-6.3-1.2-11.8-2.9-16.3-4.7-2.6-1-5.4-2.3-8.2-4-0.3-0.2-0.6-0.3-0.9-0.5-0.2-0.1-0.3-0.2-0.4-0.3-1.8-1-2.8-1.7-2.8-1.7s5.3 8.8 19.3 13c-3.3 4.2-7.4 9.1-7.4 9.1-24.4-0.8-33.6-16.8-33.6-16.8 0-35.6 15.9-64.4 15.9-64.4 15.9-11.8 31-11.4 31-11.4l1.1 1.3c-19.9 5.7-29 14.3-29 14.3s2.4-1.3 6.5-3c11.8-5.2 21.1-6.6 25-6.9 0.6-0.1 1.2-0.2 1.8-0.2 6.5-0.9 13.8-1.1 21.4-0.2 10.1 1.2 20.9 4.3 32 10.6 0 0-8.7-8.3-27.5-14l1.5-1.7s15.1-0.3 31 11.4c0 0 15.9 28.8 15.9 64.4 0 0-9.5 16-33.8 16.8Z" />
+                    </svg>
+                </a>
             </div>
         </div>
-    </nav>
-    <section class="overflow-hidden" id="management">
-        <h1 class="fw-bold text-center pt-4" id="management-heading">AVIATION MANAGEMENT</h1>
-        <p class="text-center ps-4 pe-4 pt-2 mb-6 pb-0" id="management-paragraph">Here, you will find all the aviation management members along with their contact information. For any queries or to rejoin as a pilot, feel free to reach out to a Flight Instructor.</p><div class="container">
-  <div class="row justify-content-center">
-    <!-- Single Advisor-->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s">
-        <!-- Team Thumb-->
-        <div class="advisor_thumb">
-          <img src="assets/img/ahmed_imran_khan.png" alt="">
-          <!-- Social Info-->
-          <div class="social-info">
-            <a href="https://discordapp.com/users/443244400831627284" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-discord fa-3x"></i>
-            </a>
-          </div>
-        </div>
-        <!-- Team Details-->
-        <div class="single_advisor_details_info">
-          <h6>Ahmed Imran Khan</h6>
-          <p class="designation">Chairman</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Single Advisor-->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s">
-        <!-- Team Thumb-->
-        <div class="advisor_thumb">
-          <img src="assets/img/ryuujin_onizuka.png" alt="">
-          <!-- Social Info-->
-          <div class="social-info">
-            <a href="https://discordapp.com/users/413256770119663616" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-discord fa-3x"></i>
-            </a>
-          </div>
-        </div>
-        <!-- Team Details-->
-        <div class="single_advisor_details_info">
-          <h6>Ryuujin Onizuka</h6>
-          <p class="designation">Director</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- new column-->
-
-<div class="container">
-  <div class="row justify-content-center">
-    <!-- Single Advisor-->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s">
-        <!-- Team Thumb-->
-        <div class="advisor_thumb">
-          <img src="assets/img/kai_savage.png" alt="">
-          <!-- Social Info-->
-          <div class="social-info">
-            <a href="https://discordapp.com/users/401034118718160926" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-discord fa-3x"></i>
-            </a>
-          </div>
-        </div>
-        <!-- Team Details-->
-        <div class="single_advisor_details_info">
-          <h6>Kai Savage</h6>
-          <p class="designation">Flight Instructor</br>111-2222</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Single Advisor-->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s">
-        <!-- Team Thumb-->
-        <div class="advisor_thumb">
-          <img src="assets/img/harden_cruz.png" alt="">
-          <!-- Social Info-->
-          <div class="social-info">
-            <a href="https://discordapp.com/users/1112285988971090010" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-discord fa-3x"></i>
-            </a>
-          </div>
-        </div>
-        <!-- Team Details-->
-        <div class="single_advisor_details_info">
-          <h6>Harden Cruz</h6>
-          <p class="designation">Flight Instructor</br>108-1031</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Single Advisor-->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s">
-        <!-- Team Thumb-->
-        <div class="advisor_thumb">
-          <img src="assets/img/cfi_unknown.png" alt="">
-          <!-- Social Info-->
-          <div class="social-info">
-            <a href="https://discordapp.com/users/413256770119663616" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-discord fa-3x"></i>
-            </a>
-          </div>
-        </div>
-        <!-- Team Details-->
-        <div class="single_advisor_details_info">
-          <h6>?</h6>
-          <p class="designation">Flight Instructor</br>?</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-        <h1 class="fw-bold text-center pt-6 pb-0" id="join-as-flight-instructor">JOIN AS FLIGHT INSTRUCTOR</h1>
-        <p class="text-center ps-4 pe-4 pt-4 mb-6 pb-0" id="management-paragraph-1">Are you interested in joining aviation management?<br><br>If you have the ability to instruct new pilots, the qualifications to fly both helicopters and planes smoothly, and the passion for it,<br>then you might be a great candidate for the role.<br><br>Seats are limited, so grab the opportunity when it arises. Start preparing and keep an eye on the aviation notices.</p><div class="button-container">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEb_h9C8LqsOs64Ap8SriZeDQEU9lCTBYBexwwlw9zLNOdOA/viewform" target="_blank" rel="noopener noreferrer" class="button" style="--clr: #7808d0">
-    <span class="button__icon-wrapper">
-      <svg
-        viewBox="0 0 16 16"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-        class="button__icon-svg"
-      >
-        <path d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267zm13 .566v5.734l-4.778-2.867zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083zM1 13.116V7.383l4.778 2.867L1 13.117Z"/>
-      </svg>
-
-      <svg
-        viewBox="0 0 16 16"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-        class="button__icon-svg button__icon-svg--copy"
-      >
-        <path fill-rule="evenodd" d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75zM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765M16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516zm-8 3.3 5.693-3.162L0 6.873v6.5Z"/>
-      </svg>
-    </span>
-    Apply Now
-  </a>
-</div>
-
-    </section>
-    <footer class="text-center bg-dark">
-        <div class="container text-white py-4 py-lg-5">
-            <ul class="list-inline">
-                <li class="list-inline-item me-4"><a class="fw-semibold text-decoration-none discord-text-link" href="https://discord.com/invite/eQyzRbk6PP" style="padding-right: 10px;font-size: 12px;color: white;" target="_blank">Legacy BD HUB</a><a class="link-light ps-0 pe-0" href="https://discord.com/invite/eQyzRbk6PP" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-discord text-light discord-icon">
-                            <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"></path>
-                        </svg></a></li>
-                <li class="list-inline-item"><a href="https://discord.com/invite/8qzgmPmpBs" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-discord text-light discord-icon">
-                            <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"></path>
-                        </svg></a><a class="fw-semibold text-decoration-none discord-text-link" href="https://discord.com/invite/8qzgmPmpBs" style="padding-left: 10px;font-size: 12px;color: white;" target="_blank">Legacy Roleplay Bangladesh</a></li>
-            </ul>
-            <p class="text-muted mb-0" style="font-size: 12px;">© Copyright by Legacy Roleplay Bangladesh &amp; Designed by Ryuujin Onizuka</p>
-        </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/database.js"></script>
-    <script src="assets/js/Scroll-Animation-script.js"></script>
+
 </body>
 
 </html>

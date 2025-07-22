@@ -1,0 +1,707 @@
+/* General Styles */
+body {
+    background: #000;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background: black;
+}
+
+.parallax-container {
+    position: relative;
+    height: 900px; /* Full viewport height for the parallax section, Initially: 10vh*/
+    overflow: hidden; /* Hide any overflowing images */
+    padding-bottom: 150px; /* Space for text */
+}
+
+.parallax-text {
+    position: absolute;
+    top: 20%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    font-family: 'Anton', sans-serif; /* Or any font of your choice */
+    font-size: 195px; /* Adjust text size */
+    color: white; /* Contrast against background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add subtle shadow for readability */
+    pointer-events: none; /* Prevent interactions */
+    z-index: 1; /* Ensure it stays above images */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.scene {
+    position: absolute;
+    width: 100%;
+    transform: translateY(var(--translateY)); /* Use CSS variable for parallax */
+    will-change: transform; /* Optimize rendering */
+    z-index: -1; /* Move the parallax images behind other content */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #111;
+    gap: 20px;
+}
+
+.logo a {
+    display: inline-block;
+    /* Ensures the logo behaves as a clickable block */
+}
+
+.logo img {
+    height: 50px;
+    /* Adjust based on your logo size */
+    width: auto;
+    display: block;
+    /* Removes inline spacing issues */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 50px;
+    transition: background 0.3s, color 0.3s;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav a:hover {
+    background: #fff;
+    color: #111;
+}
+
+/* Main Content */
+main {
+    position: relative; /* Ensures content appears above parallax images */
+    z-index: 1;
+    padding: 0px;
+    min-height: 80vh;
+}
+
+@keyframes revealFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initial state for elements with animation */
+[data-animate] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Active state when visible */
+[data-animate].animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* LOS SANTOS AVIATION section */
+.lsa-section {
+    animation: revealFromBottom 2s ease-out;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+    /* Anton is already bold-styled */
+    font-size: 195px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 67px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 67px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 67px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 67px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px; /* Initially: 1.2rem*/
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+footer {
+    background-color: #111;
+    /* Matches the header for consistent design */
+    color: #fff;
+    text-align: center;
+    /* Centers the text */
+    padding: 10px 0;
+    font-size: 14px;
+    /* Slightly smaller font size for footer text */
+    border-top: 1px solid #333;
+    /* Optional: Adds a subtle border at the top */
+    border-bottom: 0px solid #333;
+
+    position: relative; /* Ensure content layers above the parallax images */
+    z-index: 1;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    /* Removes default margin from paragraph */
+
+    position: relative; /* Ensure content layers above the parallax images */
+    z-index: 1;
+}
+
+
+
+
+/* Management Design Section */
+
+.management-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.management-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.management-card {
+  position: relative;
+  width: 320px;
+  overflow: hidden;
+  background: #111;
+  border-radius: 12px;
+  padding-top: 20px;
+  transition: transform 0.4s ease;
+}
+
+.management-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Animated Yellow Line */
+.management-line {
+  width: 0%;
+  height: 6px;
+  background-color: #111111;
+  margin: 0 auto;
+  transition: width 1s ease-in-out;
+}
+
+.management-card.animate .management-line {
+  width: 80%;
+}
+
+/* Image Reveal */
+.management-image {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.management-card.animate .management-image {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.management-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+}
+
+/* Info Reveal */
+.management-info {
+  padding: 20px;
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: all 0.8s ease 0.3s;
+}
+
+.management-card.animate .management-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.management-info h3 {
+  font-size: 22px; /* Initially: 1.4rem*/
+  color: #FFD700;
+  margin: 10px 0 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.management-info h4 {
+  font-size: 17px; /* Initially: 1.1rem*/
+  font-weight: 400;
+  color: #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+.management-info p {
+  font-size: 14px; /* Initially: 0.8rem*/
+  color: #aaa;
+  /*margin: 15px 5px 15px 5px;*/
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #FFD700;
+  font-size: 18px; /* Initially: 1.2rem*/
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+.social-links svg {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+  fill: #5865F2; /* Discord purple */
+}
+
+.social-links svg:hover {
+  transform: scale(1.2);
+  fill: #da7277; /* Slightly lighter on hover */
+}
+
+
+/*button styles */
+.button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 12px; /* Initially: 0.75rem*/
+  background-color: var(--clr);
+  color: #fff;
+  border-radius: 160px; /* Initially: 10rem*/
+  font-weight: 600;
+  padding: 12px 24px; /* Initially: 0.75rem 1.5rem*/
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: #0000FF;
+}
+
+.button:hover .button__icon-wrapper {
+  color: #0000FF;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+/* Regulations order list */
+
+.custom-decimal-list {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.custom-decimal-list li {
+  counter-increment: item;
+  margin-bottom: 40px;
+  position: relative;
+  padding-left: 60px; /* space for large counter */
+  text-align: left;
+  font-size: 20px; /* text size */
+  line-height: 1.4;
+}
+
+.custom-decimal-list li::before {
+  content: "1." counter(item);
+  position: absolute;
+  left: -50px;
+  top: 0;
+  font-size: 30px; /* counter size */
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+/*Regulations table*/
+
+.regulations-table {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.regulations-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px; /* vertical spacing */
+}
+
+.regulations-label {
+  width: 400px; /* fixed width for all labels */
+  white-space: nowrap;
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.2;
+  margin-left: 0px; /* Adjusted for alignment */
+}
+
+.regulations-content {
+  flex: 1;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Regulations punishment section */
+
+.regulations-punishment-section h3 {
+  padding-left: 300px;
+  text-align: left;
+}
+
+.regulations-punishment-section p {
+  padding-left: 400px;
+  text-align: left;
+}
+
+
+
+/* Information order list */
+
+.custom-number-list {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.custom-number-list li {
+  counter-increment: item;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 60px; /* space for large counter */
+  text-align: left;
+  font-size: 20px; /* text size */
+  line-height: 1.4;
+}
+
+.custom-number-list li::before {
+  content: "" counter(item);
+  position: absolute;
+  left: -15px;
+  top: 0;
+  font-size: 20px; /* counter size */
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+/* Information title section */
+
+.information-title-section h3 {
+  padding-left: 300px;
+  text-align: left;
+}
+
+.information-title-section p {
+  padding-left: 400px;
+  text-align: left;
+}
+
+
+/* Information table section */
+
+.aviation-table {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aviation-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px; /* vertical spacing */
+}
+
+.aviation-label {
+  width: 400px; /* fixed width for all labels */
+  white-space: nowrap;
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: left;
+  line-height: 1.2;
+  margin-left: 0px; /* Adjusted for alignment */
+}
+
+.aviation-content {
+  flex: 1;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Information designation section */
+
+.designation-table {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.designation-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px; /* vertical spacing */
+}
+
+.designation-label {
+  width: 400px; /* fixed width for all labels */
+  white-space: nowrap;
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: right;
+  padding-right: 50px; /* Added padding for better alignment */
+  line-height: 1.2;
+  margin-left: 0px; /* Adjusted for alignment */
+}
+
+.designation-content {
+  flex: 1;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+
+/* Information ATC Calls section */
+
+.atc-table {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.atc-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px; /* vertical spacing */
+}
+
+.atc-label {
+  width: 400px; /* fixed width for all labels */
+  white-space: nowrap;
+  text-align: left;
+  font-weight: normal;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: left;
+  line-height: 1.5;
+  margin-left: 0px; /* Adjusted for alignment */
+}
+
+.atc-content {
+  flex: 1;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+
+/* Database section */
+.sheet-container {
+  overflow-x: hidden;
+  margin: 0 auto;
+  max-width: 64%;
+  border: none;
+}
+
+
+/* Join Aviation section */
+.form-container {
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Footer with Discord link */
+
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #333;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #7bff00;
+}
+
+.footer-link svg {
+  width: 24px;
+  height: 24px;
+  color: #5865F2;
+  transition: transform 0.3s ease;
+}
+
+.footer-link:hover svg {
+  transform: scale(1.2);
+  color: #ff0000;
+}
